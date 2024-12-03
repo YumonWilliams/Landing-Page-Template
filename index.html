@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { 
+            background-image: url("media/images/bgGrid.jpg");
+            /* margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            display: flex; 
+            align-items: center;  */
+            justify-content: center; 
+        }
+
+        .container { 
+            flex-grow: 1; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+        }
+
+        .responsive-image { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 8px; /* Optional for aesthetics */ 
+        }
+
+
+        #title{
+            width: 100%; 
+            text-align: center; 
+            margin-top: 20px;
+        }
+
+
+        @media (max-width: 600px){
+            body {
+                background-image: url("media/images/bgGrid2.jpg");
+            }
+
+            .img-container { 
+                width: 100%; 
+            }
+        }
+
+
+    </style>
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <diV id="title">
+        <h1>Title Browser</h1>
+    </diV>
+    
+    
+    <div class="container">
+        <img class="img-container" src="./media/images/crusader.png"/>
+        
+    </div>
+
+    <div id="title">
+        <button>Enter</button>
+    </div>
+
+
+</body>
+</html>
